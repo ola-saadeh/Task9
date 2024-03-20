@@ -8,17 +8,19 @@
 </head>
 <body>
     <div class="container">
+        <h2>Change Shape Color</h2>
         <div>
             <input type="text" id="colorValue" placeholder="Enter your color">
-            <button onclick="changeShapeColor()">Change Color</button>
+            <button onclick="changeColor()">Change Color</button>
         </div>
         <div id="shape"></div>
     </div>
     <script>
-        function changeShapeColor() {
-            var color = document.getElementById("colorValue").value;
-            var shape = document.getElementById("shape");
-            shape.style.backgroundColor = color;
+
+        function changeColor(){
+            let color = document.getElementById("colorValue").value;
+            document.getElementById("shape").style.backgroundColor = color;
+            
         }
     </script>
  
