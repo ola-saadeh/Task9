@@ -1,43 +1,85 @@
 body {
-    background-color: rgb(240, 240, 240);
+    background-image: url('../img/bg.webp');
+    background-size: cover;
+    background-position: center;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-}
-.container {
-    background-color: white;
+    font-family: 'Arial', sans-serif;  
+  }
+  
+  .container {
+    background-color: rgb(105, 147, 164);
     border-radius: 10px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.504);
     padding: 30px;
     text-align: center;
-}
-#shape {
-    width: 200px;
-    height: 200px;
-    background-color: #ff006a;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 50%;
-    margin-top: 20px;
-    transition: background-color 0.3s ease;
-}
-
-#colorValue{
+    position: relative; 
+  }
+  
+  .container1{ 
+     display: flex;
+    justify-content: space-between;
+  }
+  
+   #shape{
+    margin: 30px;
+    margin-left: 95px;
+   }
+  
+   #shapeSelect,#colorSelect {
+    font-size: 16px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #d1d5ea;
+    color: #333;
+  }
+  
+   
+  #shapeSelect, #colorSelect{
+    appearance: none;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path fill="black" d="M5 7l5 5 5-5z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 8px center;
+    padding-right: 45px;  
+  }
+   
+  #shapeSelect option , #colorSelect option{
+    background-color: #adbfd2;
+    color: #333;
+    padding: 5px;
+  }
+  
+  
+   .select1{
+    padding: 30px;
+   }
+  
+  #colorValue {
     padding: 8px;
     border: 1px solid #ccc;
     border-radius: 5px;
     margin-right: 10px;
     width: 200px;
-}
-button {
-    padding: 8px 20px;
+  }
+  
+   
+  button {
+    padding: 10px 25px;  
     background-color: #4c8eaf;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-button:hover {
+    transition: background-color 0.3s ease, transform 0.2s ease; 
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3); 
+  }
+  
+   
+  button:hover {
     background-color: #4562a0;
-}
+    transform: translateY(-2px);  
+  }
+  
